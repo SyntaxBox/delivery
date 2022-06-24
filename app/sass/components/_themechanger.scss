@@ -1,0 +1,61 @@
+@use "../util/functions" as fun;
+
+.color-chooser {
+  position: fixed;
+  background-color: var(--secondary-color-lighten);
+  padding: fun.rem(15);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: fun.rem(100);
+  left: fun.rem(-135);
+  border-top-right-radius: fun.rem(7);
+  border-bottom-right-radius: fun.rem(7);
+  &__slide-btn {
+    position: absolute;
+    cursor: pointer;
+    left: fun.rem(135);
+    border-top-right-radius: fun.rem(7);
+    border-bottom-right-radius: fun.rem(7);
+    background-color: var(--secondary-color-lighten);
+    padding: fun.rem(5) fun.rem(20) fun.rem(5) fun.rem(15);
+  }
+  &__gear {
+    animation: rotate 2s infinite linear;
+    -webkit-animation: rotate 2s infinite linear;
+  }
+  &__btns {
+    display: grid;
+    grid-template-columns: fun.rem(30) fun.rem(30);
+    gap: fun.rem(10);
+  }
+  &__yellow {
+    background-color: hsl(45, 98%, 60%);
+  }
+  &__green {
+    background-color: hsl(103, 100%, 50%); //#6FFF33;
+  }
+  &__blue {
+    background-color: hsl(199, 100%, 50%); //#33C0FF
+  }
+  &__red {
+    background-color: hsl(355, 100%, 50%); //#FF3345
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

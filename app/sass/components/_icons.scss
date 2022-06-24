@@ -1,0 +1,5 @@
+@use "../util/functions" as fun;
+
+.fa-brands {
+  font-size: fun.rem(20);
+}

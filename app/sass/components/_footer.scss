@@ -1,0 +1,29 @@
+@use "../util/functions" as fun;
+
+.footer {
+  padding: fun.rem(20) fun.rem(20);
+  border-top-left-radius: fun.rem(20);
+  border-top-right-radius: fun.rem(20);
+  background-color: var(--secondary-color-lighten);
+  &__width {
+    max-width: fun.rem(1024);
+    margin: 0 auto;
+  }
+  &__logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: fun.rem(20);
+  }
+
+  &__links {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+  }
+}

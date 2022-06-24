@@ -1,0 +1,6 @@
+@use "../util/functions" as fun;
+main {
+  padding: fun.rem(20);
+  max-width: fun.rem(1024);
+  margin: 0 auto;
+}

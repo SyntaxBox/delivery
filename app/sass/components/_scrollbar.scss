@@ -1,0 +1,21 @@
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background:  var(--secondary-color-darken);
+      }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: var(--secondary-color-lighten);
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
+}
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--secondary-color);
+      }

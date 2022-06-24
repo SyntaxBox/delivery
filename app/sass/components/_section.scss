@@ -1,0 +1,18 @@
+@use "../util/functions" as fun;
+
+section {
+  padding: fun.rem(60) 0;
+  align-content: center;
+}
+
+.services {
+  &__data {
+    background-color: var(--secondary-color-darken);
+    padding: fun.rem(10);
+    border-radius: fun.rem(10);
+    -webkit-border-radius: fun.rem(10);
+    -moz-border-radius: fun.rem(10);
+    -ms-border-radius: fun.rem(10);
+    -o-border-radius: fun.rem(10);
+  }
+}

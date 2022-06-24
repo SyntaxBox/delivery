@@ -1,0 +1,13 @@
+@use "../util/functions" as fun;
+
+svg {
+  fill: var(--secondary-color);
+  margin: fun.rem(20) 0;
+  width: minmax(fun.vw(600), fun.rem(486.5));
+  margin: auto;
+}
+.svg {
+  &__blob {
+    fill: var(--secondary-color-lighten);
+  }
+}

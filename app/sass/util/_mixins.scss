@@ -1,0 +1,7 @@
+@use "../components/breakpoints";
+
+@mixin query($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}

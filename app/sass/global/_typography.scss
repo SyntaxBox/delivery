@@ -1,0 +1,20 @@
+@use "../util/functions" as fun;
+
+h1 {
+  font-size: min(fun.rem(40), fun.vw(50));
+  font-weight: 600;
+}
+
+h2 {
+  font-size: min(fun.rem(35), fun.rem(40));
+  margin-top: fun.rem(30);
+}
+
+h3 {
+  font-size: fun.rem(17);
+}
+
+p {
+  color: var(--secondary-text-color);
+  padding: fun.rem(10) 0;
+}

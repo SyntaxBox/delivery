@@ -1,0 +1,18 @@
+@use "sass:math";
+
+// transform pixel to rem
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  } @else {
+    @error "Unknown number #{$pixel}.";
+  }
+}
+
+@function vw($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 10) + vw;
+  } @else {
+    @error "Unknown number #{$pixel}.";
+  }
+}

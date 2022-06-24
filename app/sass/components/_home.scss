@@ -1,0 +1,5 @@
+@use '../util/functions' as fun;
+
+.home {
+    margin-top: fun.rem(50);
+}
